@@ -91,7 +91,12 @@
           <!--- Repoların Gösterileceği Kısım" -->
         </div>
       </div>
-
+      {% else %}
+        {% if error %}
+          <div class="alert alert-danger" role="alert">
+            {{error}}
+          </div>
+        {% endif %}
       {% endif %}
     </div>
 
