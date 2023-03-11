@@ -7,12 +7,15 @@ app=Flask(__name__)
 def index():
     if request.method == 'POST':
         githubname = request.form.get("githubname")
-        response = requests.get(base_url + githubname)
-        userinfo = response.json()
+        response_user = requests.get(base_url + githubname)
+        userinfo = response_user.json()
+        response_user = requests.get(base_url + githubname +'/repos')
+        repos = response_user.json()
+        
         if "message" in userinfo:
             return render_template('index.html', error = "Böyle bir kullanıcı yok")
         else:
-            return render_template('index.html', profile = userinfo)
+            return render_template('index.html', profile = userinfo, repos = repos)
     else:
         return render_template('index.html')
 
