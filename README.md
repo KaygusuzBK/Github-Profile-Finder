@@ -1,4 +1,4 @@
-```
+
 # GitHub Profile Finder
 
 Bu proje, GitHub üzerinde kullanıcıları aramak ve profil bilgilerini görüntülemek için bir uygulama sağlar.
@@ -8,7 +8,6 @@ Bu proje, GitHub üzerinde kullanıcıları aramak ve profil bilgilerini görün
 - GitHub kullanıcılarını arama
 - Kullanıcı profillerini görüntüleme
 - Profil bilgilerini ayrıntılı olarak inceleme
-- ...
 
 ## Kullanım
 
@@ -70,4 +69,3 @@ Bu proje, GitHub üzerinde kullanıcıları aramak ve profil bilgilerini görün
 ## Lisans
 
 Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır.
-```
